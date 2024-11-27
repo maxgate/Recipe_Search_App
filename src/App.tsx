@@ -7,14 +7,18 @@ import RecipeList from "./components/RecipeList";
 
 function App() {
   // const [count, setCount] = useState(0);
+  interface SearchBarProps {
+    onSearch: (query: string) => void;
+  }
 
   return (
+
     <div>
       <Navbar />
-      {/* <SearchBar /> */}
-      {/* <FilterOptions /> */}
-      {/* <RecipeCard /> */}
-      {/* <RecipeList/> */}
+     <SearchBar /> 
+     <FilterOptions /> 
+      <RecipeCard /> 
+      <RecipeList/> 
     </div>
   );
 }
